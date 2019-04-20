@@ -7,7 +7,7 @@ export class ImageHeader extends React.Component {
       <ImageBackground
         source={{
           uri:
-            'https://assets3.thrillist.com/v1/image/2725860/size/gn-gift_guide_variable_c.jpg',
+            'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
           width: '100%',
           height: 250
         }}
