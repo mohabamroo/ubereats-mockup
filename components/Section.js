@@ -9,7 +9,6 @@ export class Section extends React.Component {
     }
     staticstyle = function() {
       if (staticBox) {
-				console.log("TCL: Section -> staticstyle -> staticBox", staticBox)
         return (styleObj = {
           width: Dimensions.get('window').width,
           flex: 1,
