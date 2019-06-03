@@ -11,20 +11,28 @@ export class HomeScreenRouter extends React.Component {
     const gotToFacebook = () => {
       Actions.facebookComments();
     };
+    const gotToShimmer = () => {
+      Actions.facebookShimmer();
+    };
     return (
       <View style={{ marginBottom: 100 }}>
         <ScrollView style={styles.scrollLayout}>
           <Button
+            style={styles.btn}
             onPress={gotToUbereats}
             title="Uber Eats"
-            color="#841584"
             accessibilityLabel="Learn more about this purple button"
           />
           <Button
+            style={styles.btn}
             onPress={gotToFacebook}
             title="Facebook Comments"
-            color="#841584"
             accessibilityLabel="Learn more about this purple button"
+          />
+          <Button
+            style={styles.btn}
+            onPress={gotToShimmer}
+            title="Facebook Shimmer"
           />
         </ScrollView>
       </View>
@@ -33,6 +41,11 @@ export class HomeScreenRouter extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  btn: {
+    marginBottom: 20,
+    padding: 10,
+    color: '#841584'
+  },
   card: {
     padding: 10
   },

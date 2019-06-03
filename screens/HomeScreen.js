@@ -5,6 +5,7 @@ import { WebBrowser } from 'expo';
 import { UberEatsHome } from '../components/UberEats';
 import { HomeScreenRouter } from '../components/HomeRouter';
 import { FacebookComments } from '../components/FacebookComments';
+import { FacebookShimmer } from '../components/FacebookShimmer';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -26,6 +27,11 @@ export default class HomeScreen extends React.Component {
             key="facebookComments"
             component={FacebookComments}
             title="Facebook"
+          />
+          <Scene
+            key="facebookShimmer"
+            component={FacebookShimmer}
+            title="Facebook Shimmer"
           />
         </Scene>
       </Router>
